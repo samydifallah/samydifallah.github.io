@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Samy DIFALLAH | Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    },
+                    colors: {
+                        accent: '#3b82f6',
+                        accentHover: '#2563eb',
+                    }
+                }
+            }
+        }
+    </script>
+    <script>
+        window.addEventListener("DOMContentLoaded", () => {
+            document.body.classList.add("loaded");
+        });
+    </script>
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+        body {
+            opacity: 0;
+            transition: opacity 0.8s ease-in;
+        }
+        body.loaded {
+            opacity: 1;
+        }
+    </style>
+</head>
+<body class="bg-zinc-950 text-stone-100 font-sans">
+    <nav class="fixed top-0 left-0 right-0 px-4 sm:px-8 backdrop-blur-md shadow-sm z-50">
+        <div class="px-4 sm:px-8">
+            <div class="flex justify-between items-center h-16">
+                <div class="text-2xl text-stone-100">
+                    <a href="#" class="font-bold hover:opacity-80 transition-opacity">Samy DIFALLAH</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <main class="pt-32 flex flex-col justify-center items-center px-2 sm:px-4">
+        <div class="max-w-4xl w-full flex flex-col items-center text-center">
+            <h1 class="text-5xl font-bold mb-4">Samy DIFALLAH</h1>
+            <h2 class="text-2xl text-stone text-center">Ingénieur logiciel & cybersécurité</h2>
+            <div class="pt-8 flex items-center space-x-8">
+                <a href="https://tryhackme.com/p/royalewcheese" target="_blank" class="hover:opacity-80 transition-opacity" title="TryHackMe">
+                    <img src="https://tryhackme.com/favicon.svg" alt="TryHackMe" width="30" height="30" class="filter brightness-0 invert">
+                </a>
+                <a href="https://www.root-me.org/royalewcheese" target="_blank" class="hover:opacity-80 transition-opacity" title="Root Me">
+                    <img src="https://www.root-me.org/IMG/logo/siteon0.svg" alt="Root Me" width="30" height="30" class="filter brightness-0 invert">
+                </a>
+                <a href="https://github.com/samydifallah" target="_blank" class="w-[30px] h-[30px] hover:opacity-80 transition-opacity" title="GitHub">
+                    <i class="fa-brands fa-github text-[30px] text-white"></i>
+                </a>
+            </div>
+            <a href="#contact" class="group mt-12 inline-flex items-center gap-2 px-5 py-2.5 rounded-full bg-accent hover:bg-accentHover hover:transition-all duration-300 text-white font-medium">
+                Me contacter
+                <i class="fa-solid fa-arrow-right transform transition-transform duration-300 group-hover:translate-x-1"></i>
+            </a>
+        </div>
+    </main>
+    <section class="pt-24 max-w-4xl mx-auto px-2 sm:px-4">
+        <h1 class="text-4xl font-semibold text-center mb-16">Mon parcours</h1>
+        <div class="relative">
+            <div class="absolute left-1/2 transform -translate-x-1/2 h-full border-l-2 border-stone-700"></div>
+            <div class="space-y-16">
+                <div class="relative w-full flex justify-start">
+                    <div class="w-1/2 pr-8 text-right">
+                        <div class="flex justify-end mb-2">
+                            <img src="https://www.framatome.com/app/uploads/2021/09/cropped-favicon-1-1-192x192.png" alt="Framatome" class="h-10">
+                        </div>
+                        <time class="block text-sm text-stone-400 mb-1">Octobre 2024 - Avril 2025</time>
+                        <h4 class="text-xl font-semibold">Ingénieur logiciel & cybersécurité</h4>
+                        <p class="text-stone-300">Framatome via aga2IT</p>
+                    </div>
+                    <div class="absolute left-1/2 transform -translate-x-1/2 translate-y-3 w-5 h-5 rounded-full bg-white border-2 border-zinc-950"></div>
+                </div>
+                <div class="relative w-full flex justify-end">
+                    <div class="w-1/2 pl-8 text-left">
+                        <div class="flex justify-start mb-3">
+                            <img src="https://www.edf.fr/themes/custom/nova/assets/images/00-tokens/logos/images/logo-edf.svg" alt="EDF" class="h-10">
+                        </div>
+                        <time class="block text-sm text-stone-400 mb-1">Septembre 2022 - Août 2024</time>
+                        <h4 class="text-xl font-semibold">Alternant ingénieur cybersécurité</h4>
+                        <p class="text-stone-300">EDF Hydro</p>
+                    </div>
+                    <div class="absolute left-1/2 transform -translate-x-1/2 translate-y-3 w-5 h-5 rounded-full bg-white border-2 border-zinc-950"></div>
+                </div>
+                <div class="relative w-full flex justify-start">
+                    <div class="w-1/2 pr-8 text-right">
+                        <div class="flex justify-end mb-3">
+                            <img src="https://www.hardis-group.com/wp-content/uploads/2024/12/cropped-favicon-hg-96x96px-300x300.png" alt="HARDIS GROUP" class="h-10">
+                        </div>
+                        <time class="block text-sm text-stone-400 mb-1">Mai 2022 - Juillet 2022</time>
+                        <h4 class="text-xl font-semibold">Stagiaire développeur backend</h4>
+                        <p class="text-stone-300">HARDIS GROUP</p>
+                    </div>
+                    <div class="absolute left-1/2 transform -translate-x-1/2 translate-y-3 w-5 h-5 rounded-full bg-white border-2 border-zinc-950"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer id="contact" class="bg-zinc-900 mt-24 py-8 px-2 sm:px-4 text-center">
+        <div class="flex justify-center gap-6 flex-wrap">
+            <a href="mailto:samy.difallah@example.com" class="flex items-center gap-2 px-4 py-2 rounded-lg bg-accent hover:bg-accentHover transition-all duration-300 hover:scale-105 text-white">
+                <i class="fa-solid fa-envelope"></i>
+                <span>contact@samydifallah.com</span>
+            </a>
+            <a href="https://www.linkedin.com/in/samy-difallah/" target="_blank" class="flex items-center gap-2 px-4 py-2 rounded-lg bg-accent hover:bg-accentHover transition-all duration-300 hover:scale-105 text-white">
+                <i class="fab fa-linkedin"></i>
+                <span>LinkedIn</span>
+            </a>
+        </div>
+    </footer>
+</body>
+</html>
